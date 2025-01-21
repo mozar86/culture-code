@@ -1,0 +1,30 @@
+# Dependências do Node.js
+node_modules/
+package-lock.json
+
+# Diretório de build
+dist/
+
+# Arquivos de configuração sensíveis
+.env
+
+# Logs e relatórios de erro
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Configurações específicas de IDEs
+.idea/
+.vscode/
+*.swp
+
+# Arquivos temporários
+*.tmp
+*.log
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Configurações do OneDrive
+*.sync
