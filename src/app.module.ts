@@ -13,7 +13,7 @@ import { ProductsModule } from './products/products.module';
       password: process.env.DB_PASSWORD || '082416',
       database: process.env.DB_NAME || 'culture_code',
       autoLoadEntities: true,
-      synchronize: false, 
+      synchronize: true, 
     }),
     AuthModule,
     ProductsModule,
