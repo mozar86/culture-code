@@ -1,6 +1,6 @@
 # Culture Code
 
-**Descrição**
+***Descrição***
 
 O Culture Code é uma aplicação backend de gamificação desenvolvida para uma empresa. A aplicação foi construída com Nest.js e inclui funcionalidades de autenticação, gerenciamento de usuários, produtos e jóias. O sistema utiliza PostgreSQL como banco de dados e JWT para autenticação.
 
