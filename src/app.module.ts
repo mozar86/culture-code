@@ -3,6 +3,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { AuthModule } from './auth/auth.module';
 import { ProductsModule } from './products/products.module';
+import { DataSource } from 'typeorm';
 
 @Module({
   imports: [
@@ -12,13 +13,9 @@ import { ProductsModule } from './products/products.module';
       inject: [ConfigService],
       useFactory: (configService: ConfigService) => ({
         type: 'postgres',
-        host: configService.get<string>('DB_HOST'),
-        port: configService.get<number>('DB_PORT'),
-        username: configService.get<string>('DB_USER'),
-        password: configService.get<string>('DB_PASSWORD'),
-        database: configService.get<string>('DB_NAME'),
+        url: configService.get<string>('DATABASE_URL'), 
         autoLoadEntities: true,
-        synchronize: true, 
+        //synchronize: true, 
       }),
     }),
     AuthModule,
