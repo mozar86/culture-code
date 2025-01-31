@@ -127,7 +127,7 @@ As entidades principais incluem:
 
 ## **Deploy**
 
-- O projeto está pronto para ser implantado em plataformas como Vercel, Railway, Render ou AWS.
+https://culture-code.onrender.com
 
 ---
 
